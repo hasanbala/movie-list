@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Karma", sans-serif;
+  display: block;
+}
+
+.container {
+  margin: auto 25%;
+  margin-top: 50px;
+  /* min-width: 1100px; */
+}
+
+.card-row {
+  border: 1px solid #cac3e2;
+  border-radius: 4px;
+}
+
+.card-header {
+  background-color: #6b5d9e;
+  color: white;
+  padding: 12px 20px;
+  letter-spacing: 2px;
+
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.card-head {
+  padding: 20px;
+}
+
+.card-foot {
+  padding: 20px;
+}
+
+#film-form {
+  width: 100%;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.form-div {
+  padding: 0 5px;
+  margin-bottom: 16px;
+}
+
+.form-input {
+  padding: 14px 16px;
+  border-radius: 4px;
+  width: 100%;
+  border: 3px solid #ccc;
+}
+.form-input:focus {
+  border: 3px solid #6b5d9e;
+  border-radius: 4px;
+  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  outline: none;
+}
+
+.form-button {
+  margin-left: 5px;
+  padding: 10 16px;
+  width: 25%;
+  background-color: #04aa6d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #04aa6d;
+}
+.form-button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #04aa6d;
+  transition: 0.2s;
+  border: 1px solid #04aa6d;
+}
+
+.card-title {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.tab-head {
+  background-color: #363b3d;
+  width: 100%;
+  color: white;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+#films td {
+  vertical-align: top;
+}
+
+#clear-films {
+  text-decoration: none;
+  padding: 12px 16px;
+  background-color: #db6470;
+  color: white;
+  border-radius: 4px;
+}
+#clear-films:hover {
+  background-color: #c20013;
+  color: white;
+  /* align-self: flex-start; */
+}
+
+#delete-film {
+  margin-top: 5px;
+  padding: 6px 10px;
+  background-color: #d400ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #d400ff;
+}
+#delete-film:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #d400ff;
+  transition: 0.4s;
+  border: 1px solid #d400ff;
+}
+
+.delete {
+  color: rgb(0, 70, 12);
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+.warning {
+  color: #ff0400;
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+.success {
+  color: rgb(0, 0, 0);
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+.already {
+  color: rgb(255, 0, 221);
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}

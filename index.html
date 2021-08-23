@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Movie Project</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card-row">
+            <div class="card-header">Film Projesi</div>
+            <div class="card-head">
+                <form id="film-form" name="form">
+                    <div class="form-row">
+                        <div class="form-div">
+                            <input class="form-input" type="text" name="title" id="title" placeholder="Film İsmi"
+                                required>
+                        </div>
+                        <div class="form-div">
+                            <input class="form-input" type="text" name="director" id="director" placeholder="Yönetmen"
+                                required>
+                        </div>
+                        <div class="form-div">
+                            <input class="form-input" type="text" name="url" id="url" placeholder="Film Afiş Linki"
+                                required>
+                        </div>
+                    </div>
+                    <button type="submit" class="form-button">Film Ekleyin</button>
+                </form>
+                <hr style="margin: 16px 0; opacity: 0.5;">
+            </div>
+
+            <div class="card-foot">
+                <hr style="margin: 16px 0; opacity: 0.5;">
+                <h5 class="card-title" id="films-title">Filmler</h5>
+                <hr style="margin: 16px 0; opacity: 0.5;">
+                <table class="tab-head">
+                    <thead>
+                        <tr>
+                            <th style="width: 55%;">Film Afişi</th>
+                            <th style="width: 15%;">Film İsmi</th>
+                            <th style="width: 15%;">Yönetmen</th>
+                            <th style="width: 15%;"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="films">
+                        <!-- <tr>
+                            <td><img src="" class="table-img"></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="#" id ="delete-film" >Filmi Sil</a></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <!-- <tr>
+                <td><img src="" class="img-fluid img-thumbnail"></td>
+                <td></td>
+                <td></td>
+                <td><a href="#" id = "delete-film" class = "btn btn-danger">Filmi Sil</a></td>
+                </tr> -->
+                <hr style="margin: 16px 0; opacity: 0.5;">
+                <a id="clear-films" href="#">Tüm Filmleri Temizleyin</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="views/ui.js"></script>
+    <script src="views/storage.js"></script>
+    <script src="views/film.js"></script>
+    <script src="views/project.js"></script>
+
+</body>
+
+</html>
