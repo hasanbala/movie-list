@@ -1,4 +1,4 @@
-class Storage {
+export class Storage {
   static addFilmToStorage(newFilm) {
     let films = this.getFilmFromStorage();
 

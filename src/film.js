@@ -4,7 +4,7 @@
 //     this.url = url;
 // }
 
-class Film {
+export class Film {
   constructor(title, director, url) {
     this.title = title;
     this.director = director;

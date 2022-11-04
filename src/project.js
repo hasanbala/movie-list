@@ -12,7 +12,6 @@ function eventListener() {
   form.addEventListener("submit", addFilm);
   cardBody2.addEventListener("click", deleteFilm);
   clearButton.addEventListener("click", clearAllfilms);
-
   document.addEventListener("DOMContentLoaded", function () {
     let films = Storage.getFilmFromStorage();
     UI.loadAllFilms(films);
